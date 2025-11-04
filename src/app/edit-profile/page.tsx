@@ -30,7 +30,7 @@ export default function EditProfilePage() {
     <div className="bg-white pt-[83px] pb-[83px]">
       <div className="max-w-[960px] mx-auto">
         <div className="flex items-center justify-between">
-          <Image src="/klub.png" alt="klub logo" width={65} height={25} />
+          <Image src="/Klub.png" alt="klub logo" width={65} height={25} />
           <Button
             type="button"
             className="inline-flex items-center gap-2 rounded-[10px] bg-[#4BD3661A] px-4 py-1 h-[34px] border border-[#ECECEC]"

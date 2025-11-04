@@ -40,7 +40,7 @@ export default function TopBar() {
     <header className="z-20 bg-[#F6F6F6] border-b relative">
       <div className="flex items-center justify-between px-4 py-3">
         <Link href="/">
-          <Image src="/klub.png" alt="Klub Logo" width={63} height={63} />
+          <Image src="/Klub.png" alt="Klub Logo" width={63} height={63} />
         </Link>
         <div className="flex items-center gap-3">
           <div className="rounded-[10px] h-11 w-11 bg-white flex items-center justify-center">

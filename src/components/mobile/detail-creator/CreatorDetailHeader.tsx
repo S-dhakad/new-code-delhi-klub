@@ -6,7 +6,7 @@ const CreatorDetailHeader = () => {
   return (
     <header className="px-4 py-6 flex items-center justify-between border-b">
       <Link href="/">
-        <Image src="/klub.png" alt="Klub Logo" width={63} height={63} />
+        <Image src="/Klub.png" alt="Klub Logo" width={63} height={63} />
       </Link>
     </header>
   );

@@ -77,7 +77,7 @@ export default function DiscoveryPage() {
           <div className="py-[25px] flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <Link href="/" className="flex items-center gap-2">
-                <img src="/klub.png" alt="klub logo" width={71} height={25} />
+                <Image src="/Klub.png" alt="klub logo" width={71} height={25} />
               </Link>
             </div>
             {accessToken && profile ? (

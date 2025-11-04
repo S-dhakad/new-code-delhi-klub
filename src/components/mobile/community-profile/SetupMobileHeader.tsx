@@ -8,7 +8,7 @@ const SetupMobileHeader = () => {
   return (
     <header className="p-4 flex items-center justify-between border-b">
       <Link href="/">
-        <Image src="/klub.png" alt="Klub Logo" width={63} height={63} />
+        <Image src="/Klub.png" alt="Klub Logo" width={63} height={63} />
       </Link>
       <div className="flex items-center gap-2 p-2.5 border rounded-2xl bg-[#F6F6F6]">
         <Image
