@@ -287,7 +287,7 @@ export default function HeaderBar() {
             />
             <div className="rounded-[20px] bg-[#F6F6F6] border border-[#ECECEC] px-3 py-2 flex flex-wrap items-center gap-3 justify-center">
               <Link href="/" className="font-extrabold text-lg text-[#000000]">
-                <Image src="/klub.png" alt="klub logo" width={64} height={29} />
+                <img src="/Klub.png" alt="klub logo" width={64} height={29} />
               </Link>
 
               <div className="h-6 w-px bg-slate-200 mx-1 rounded" />
