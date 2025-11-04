@@ -7,6 +7,7 @@ import ProfileMenu from './ProfileMenu';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
+import KlubLogo from '@/../public/Klub.png';
 import { useAuthStore } from 'src/store/auth.store';
 import {
   useCommunityStore,
@@ -287,7 +288,13 @@ export default function HeaderBar() {
             />
             <div className="rounded-[20px] bg-[#F6F6F6] border border-[#ECECEC] px-3 py-2 flex flex-wrap items-center gap-3 justify-center">
               <Link href="/" className="font-extrabold text-lg text-[#000000]">
-                <img src="/Klub.png" alt="klub logo" width={64} height={29} />
+                <Image 
+                  src={KlubLogo} 
+                  alt="klub logo" 
+                  width={64} 
+                  height={29}
+                  priority
+                />
               </Link>
 
               <div className="h-6 w-px bg-slate-200 mx-1 rounded" />
