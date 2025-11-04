@@ -72,6 +72,14 @@ const nextConfig: NextConfig = {
         hostname: 'www.facebook.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      }
     ],
   },
 };
