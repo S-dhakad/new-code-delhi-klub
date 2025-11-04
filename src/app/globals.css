@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  .logo {
+    @apply font-logo italic font-extrabold tracking-logo;
+  }
+}
+
+@layer base {
+  :root {
+    /* Color System */
+    --primary: 212 90% 39% / 1;
+    --secondary: 210 56% 94% / 1;
+
+    /* Text Colors */
+    --text-primary: 0, 0%, 0%/ 1;
+    --text-secondary: 0, 0%, 47%/ 1;
+    --stroke-regular: 0, 0%, 93%/ 1;
+
+    /* Background Colors */
+    --background-1-page: 0, 0%, 96% / 1;
+
+    /* shadcn/ui variables for compatibility */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Color System */
+    --primary: 212 90% 39% / 1;
+    --secondary: 210 56% 94% / 1;
+
+    /* Text Colors */
+    --text-primary: 0, 0%, 0%/ 1;
+    --text-secondary: 0, 0%, 47%/ 1;
+
+    --stroke-regular: 0, 0%, 93%/ 1;
+
+    /* Background Colors */
+    --background-1-page: 0, 0%, 96% / 1;
+
+    /* shadcn/ui variables for compatibility */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+}
+
+* {
+  @apply transition-colors duration-200;
+  transition-timing-function: ease-in-out;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  padding: 0;
+}
+
+/* globals.css or root CSS file */
+
+/* Remove outline and unwanted focus styles */
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color:#0A5DBC !important;
+  resize: none;
+}
+.border-input{
+  border-color:#ECECEC !important;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #787878 !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+
+/* Remove number input arrows (Chrome, Safari, Edge, Opera) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove number input arrows (Firefox) */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Prevent :target styles from applying globally */
+:target {
+  outline: none !important;
+}
+:focus {
+  outline: none !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.24s ease-out;
+}
+
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+@layer components {
+  .tabs-trigger[data-state="active"] .tab-count {
+    background-color: #0A5DBC;
+    color: #ffffff;
+  }
+}

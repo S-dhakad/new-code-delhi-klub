@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Only run for regular commits, not merges, rebases, etc.
+if [ "$2" = "" ]; then
+  exec < /dev/tty && pnpm cz --hook "$1" || true
+fi 
