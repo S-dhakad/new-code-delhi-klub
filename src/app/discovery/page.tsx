@@ -77,7 +77,7 @@ export default function DiscoveryPage() {
           <div className="py-[25px] flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <Link href="/" className="flex items-center gap-2">
-                <Image src="/klub.png" alt="klub logo" width={71} height={25} />
+                <img src="/klub.png" alt="klub logo" width={71} height={25} />
               </Link>
             </div>
             {accessToken && profile ? (
@@ -85,7 +85,7 @@ export default function DiscoveryPage() {
                 <div className="inline-flex items-center gap-2 rounded-[20px] bg-[#F6F6F6] border border-[#ECECEC] px-[15px] py-3">
                   <div className="relative w-11 h-11 rounded-[15px] border-2 border-[#0A5DBC] overflow-hidden">
                     {profile.profilePicture && (
-                      <Image
+                      <img
                         src={`${profile.profilePicture}`}
                         alt="profile photo"
                         width={44}
